@@ -6,6 +6,8 @@ import { HookSection } from "@/components/sections/hook-section"
 import { TechnologySection } from "@/components/sections/technology-section"
 import { RegulatorySection } from "@/components/sections/regulatory-section"
 import { EcosystemSection } from "@/components/sections/ecosystem-section"
+import { EHDSAlignmentSection } from "@/components/sections/ehds-alignment-section"
+import { SEDIALinkSection } from "@/components/sections/sedia-link-section"
 import { DeadlineSection } from "@/components/sections/deadline-section"
 import { RequirementsSection } from "@/components/sections/requirements-section"
 import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
@@ -41,6 +43,12 @@ export default function GlobalDataCarePage() {
       
       {/* Slide 7b - Health Ecosystem */}
       <EcosystemSection />
+      
+      {/* Slide 7c - EHDS Alignment (European Connection) */}
+      <EHDSAlignmentSection />
+      
+      {/* Slide 7d - SEDIA Link (National Connection) */}
+      <SEDIALinkSection />
       
       {/* Slide 8 - Deadline & Modalities */}
       <DeadlineSection />
