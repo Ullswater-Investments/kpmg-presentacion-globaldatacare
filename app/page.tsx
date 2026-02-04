@@ -14,7 +14,9 @@ import { RequirementsSection } from "@/components/sections/requirements-section"
 import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { SpinoffSection } from "@/components/sections/spinoff-section"
-import { RevenueSection } from "@/components/sections/revenue-section"
+import { RevenueSection } from "@/components/sections/revenue-section" // Added import
+import { GrowthStrategySection } from "@/components/sections/growth-strategy-section"
+import { ValuationSection } from "@/components/sections/valuation-section"
 import { InvestmentSection } from "@/components/sections/investment-section"
 import { FooterLogos } from "@/components/sections/footer-logos"
 
@@ -69,8 +71,11 @@ export default function GlobalDataCarePage() {
       {/* Slide 12 - Spin-Off */}
       <SpinoffSection />
       
-      {/* Slide 13 - Revenue Projection */}
-      <RevenueSection />
+      {/* Slide 13 - Growth Strategy */}
+      <GrowthStrategySection />
+      
+      {/* Slide 13b - Valuation 2026 */}
+      <ValuationSection />
       
       {/* Slide 14 - Investment */}
       <InvestmentSection />
