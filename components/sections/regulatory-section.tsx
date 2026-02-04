@@ -1,6 +1,6 @@
 "use client"
 
-import { Globe, Scale, Building, FileCheck, Shield, Award, Euro } from "lucide-react"
+import { Globe, Scale, Building, FileCheck, Shield, Award, Euro, ExternalLink } from "lucide-react"
 
 const timeline = [
   {
@@ -118,16 +118,32 @@ export function RegulatorySection() {
           <div className="w-24 h-24 bg-[#003399] rounded-lg flex items-center justify-center shrink-0">
             <span className="text-4xl font-bold text-[#FFCC00]">25</span>
           </div>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left flex-1">
             <h3 className="text-xl font-bold text-[#003399] mb-2">
               Espacios de Datos Federados Homologados en España
             </h3>
-            <p className="text-[#003399]/80">
+            <p className="text-[#003399]/80 mb-4">
               Global Data Care es uno de los{" "}
               <span className="font-bold">únicos 25 espacios certificados</span>{" "}
               por la SEDIA. Esta homologación garantiza el cumplimiento de los estándares europeos de seguridad, 
               soberanía del dato y federación, eliminando el riesgo tecnológico para los inversores.
             </p>
+            
+            {/* Official SEDIA Link */}
+            <a
+              href="https://cred.digital.gob.es/content/dam/cred/img/docs/Espacios_de_Datos_Elegibles_KTED.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#003399] text-white px-4 py-2.5 rounded-lg hover:bg-[#002266] transition-colors group"
+            >
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-[#FFCC00]" />
+                <span className="font-bold text-sm uppercase tracking-wide">Documento Oficial SEDIA</span>
+              </div>
+              <span className="text-white/60 text-sm hidden sm:inline">|</span>
+              <span className="text-white/80 text-sm hidden sm:inline">Lista de Espacios Elegibles</span>
+              <ExternalLink className="w-4 h-4 text-[#FFCC00] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
           </div>
         </div>
       </div>
