@@ -5,6 +5,7 @@ import { CredibilitySection } from "@/components/sections/credibility-section"
 import { HookSection } from "@/components/sections/hook-section"
 import { TechnologySection } from "@/components/sections/technology-section"
 import { RegulatorySection } from "@/components/sections/regulatory-section"
+import { EcosystemSection } from "@/components/sections/ecosystem-section"
 import { DeadlineSection } from "@/components/sections/deadline-section"
 import { RequirementsSection } from "@/components/sections/requirements-section"
 import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
@@ -35,8 +36,11 @@ export default function GlobalDataCarePage() {
       {/* Slide 6 - Technology */}
       <TechnologySection />
       
-      {/* Slide 7 - Regulatory */}
+      {/* Slide 7 - Regulatory Framework */}
       <RegulatorySection />
+      
+      {/* Slide 7b - Health Ecosystem */}
+      <EcosystemSection />
       
       {/* Slide 8 - Deadline & Modalities */}
       <DeadlineSection />
