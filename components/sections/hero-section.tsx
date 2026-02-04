@@ -13,11 +13,10 @@ export function HeroSection() {
             key={i}
             className="absolute text-[hsl(199,89%,48%)] opacity-40"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 80}%`,
-              width: `${12 + Math.random() * 16}px`,
-              height: `${12 + Math.random() * 16}px`,
-              animationDelay: `${Math.random() * 2}s`,
+              left: `${10 + (i * 4.5)}%`,
+              top: `${5 + (i * 4)}%`,
+              width: `${14 + (i % 4) * 4}px`,
+              height: `${14 + (i % 4) * 4}px`,
             }}
             fill="currentColor"
           />
@@ -76,31 +75,8 @@ export function HeroSection() {
         </Button>
 
         <div className="mt-8 flex flex-col items-center text-white/60 animate-bounce">
-          <span className="text-sm">Desplázate</span>
+          <span className="text-sm">Desplazate</span>
           <ChevronDown className="w-6 h-6" />
-        </div>
-      </div>
-
-      {/* Footer logos placeholder */}
-      <div className="absolute bottom-0 left-0 right-0 bg-white py-4">
-        <div className="flex justify-center items-center gap-6 md:gap-12 px-4 flex-wrap">
-          <div className="flex items-center gap-2 text-[hsl(207,90%,30%)]">
-            <Database className="w-6 h-6 text-[hsl(199,89%,48%)]" />
-            <span className="text-sm font-medium">Kit Espacios<br/>de Datos</span>
-          </div>
-          <div className="h-10 w-px bg-gray-200 hidden md:block" />
-          <span className="text-sm font-bold text-red-600">red.es</span>
-          <div className="h-10 w-px bg-gray-200 hidden md:block" />
-          <span className="text-sm font-bold text-[hsl(207,90%,30%)]">KIT DIGITAL</span>
-          <div className="h-10 w-px bg-gray-200 hidden md:block" />
-          <span className="text-sm font-bold text-red-500">R</span>
-          <div className="h-10 w-px bg-gray-200 hidden md:block" />
-          <div className="flex items-center gap-1">
-            <span className="text-xs text-gray-600">Financiado por<br/>la Unión Europea</span>
-            <div className="w-8 h-6 bg-blue-600 rounded-sm flex items-center justify-center">
-              <span className="text-yellow-400 text-xs">★</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
