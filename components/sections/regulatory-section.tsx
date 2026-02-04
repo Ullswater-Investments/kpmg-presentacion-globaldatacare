@@ -131,7 +131,7 @@ export function RegulatorySection() {
             
             {/* Official SEDIA Link */}
             <a
-              href="https://cred.digital.gob.es/content/dam/cred/img/docs/Espacios_de_Datos_Elegibles_KTED.pdf"
+              href="https://cred.digital.gob.es/content/dam/cred/img/docs/Espacios_de_Datos_Elegibles_KTED.pdf#page=22"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#003399] text-white px-4 py-2.5 rounded-lg hover:bg-[#002266] transition-colors group"
@@ -141,7 +141,7 @@ export function RegulatorySection() {
                 <span className="font-bold text-sm uppercase tracking-wide">Documento Oficial SEDIA</span>
               </div>
               <span className="text-white/60 text-sm hidden sm:inline">|</span>
-              <span className="text-white/80 text-sm hidden sm:inline">Lista de Espacios Elegibles</span>
+              <span className="text-white/80 text-sm hidden sm:inline">Ver GLOBAL-DATACARE (Pág. 22)</span>
               <ExternalLink className="w-4 h-4 text-[#FFCC00] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
