@@ -65,24 +65,7 @@ export function OriginSection() {
           </div>
         </div>
 
-        {/* Footer logos */}
-        <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="flex justify-center items-center gap-6 md:gap-12 flex-wrap">
-            <div className="flex items-center gap-2 text-[hsl(207,90%,30%)]">
-              <Database className="w-6 h-6 text-[hsl(199,89%,48%)]" />
-              <span className="text-sm font-medium">Kit Espacios<br/>de Datos</span>
-            </div>
-            <span className="text-lg font-bold text-red-600">red.es</span>
-            <span className="text-lg font-bold text-[hsl(207,90%,30%)]">KIT DIGITAL</span>
-            <span className="text-lg font-bold text-red-500">R</span>
-            <div className="flex items-center gap-1">
-              <span className="text-xs text-gray-600">Financiado por<br/>la Unión Europea</span>
-              <div className="w-8 h-6 bg-blue-600 rounded-sm flex items-center justify-center">
-                <span className="text-yellow-400 text-xs">★</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   )
