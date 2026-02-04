@@ -22,7 +22,7 @@ const timeline = [
     icon: Building,
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Espacios Homologados",
     description: "Solo 25 espacios certificados en España. Global Data Care es uno de ellos",
     icon: FileCheck,
