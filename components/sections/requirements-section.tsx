@@ -4,9 +4,9 @@ import { Users, FileText, Receipt, Clock, AlertCircle, CheckCircle } from "lucid
 
 export function RequirementsSection() {
   const steps = [
-    { number: 1, title: "Solicitud", description: "Presentar antes del 31/03" },
-    { number: 2, title: "Ejecución", description: "Implementar la conexión" },
-    { number: 3, title: "Justificación", description: "Documentar horas y gastos" },
+    { number: 1, title: "Ejecución", description: "Implementar la conexión" },
+    { number: 2, title: "Justificación", description: "Documentar horas y gastos" },
+    { number: 3, title: "Solicitud", description: "Presentar antes del 31/03" },
     { number: 4, title: "Cobro", description: "Recibir la subvención" },
   ]
 
