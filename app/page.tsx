@@ -9,6 +9,7 @@ import { EcosystemSection } from "@/components/sections/ecosystem-section"
 import { EHDSAlignmentSection } from "@/components/sections/ehds-alignment-section"
 import { SEDIALinkSection } from "@/components/sections/sedia-link-section"
 import { DeadlineSection } from "@/components/sections/deadline-section"
+import { EligibilitySection } from "@/components/sections/eligibility-section"
 import { RequirementsSection } from "@/components/sections/requirements-section"
 import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
 import { PricingSection } from "@/components/sections/pricing-section"
@@ -52,6 +53,9 @@ export default function GlobalDataCarePage() {
       
       {/* Slide 8 - Deadline & Modalities */}
       <DeadlineSection />
+      
+      {/* Slide 8b - Eligibility */}
+      <EligibilitySection />
       
       {/* Slide 9 - Requirements */}
       <RequirementsSection />
