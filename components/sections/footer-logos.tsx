@@ -8,7 +8,7 @@ export function FooterLogos() {
           {/* Kit Espacios de Datos - Logo principal */}
           <div className="w-full max-w-md">
             <Image
-              src="/images/logo-20kit-20espacio-20de-20datos.jpg"
+              src="/images/logo-kit-espacio-datos.jpg"
               alt="Kit Espacios de Datos"
               width={400}
               height={150}
@@ -19,7 +19,7 @@ export function FooterLogos() {
           {/* Logos institucionales */}
           <div className="w-full max-w-4xl">
             <Image
-              src="/images/logos-20kit-20digital.jpg"
+              src="/images/logos-kit-digital.jpg"
               alt="Logos institucionales: Gobierno de España, Red.es, Kit Digital, NextGenerationEU"
               width={1200}
               height={100}
