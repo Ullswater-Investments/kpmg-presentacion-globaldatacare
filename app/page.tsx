@@ -14,10 +14,10 @@ import { RequirementsSection } from "@/components/sections/requirements-section"
 import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { SpinoffSection } from "@/components/sections/spinoff-section"
-import { RevenueSection } from "@/components/sections/revenue-section" // Added import
 import { GrowthStrategySection } from "@/components/sections/growth-strategy-section"
 import { ValuationSection } from "@/components/sections/valuation-section"
-import { InvestmentSection } from "@/components/sections/investment-section"
+import { InvestmentSection } from "@/components/sections/investment-section" // Import added for InvestmentSection
+import { UrgentInvestmentSection } from "@/components/sections/urgent-investment-section" // Import added for UrgentInvestmentSection
 import { FooterLogos } from "@/components/sections/footer-logos"
 
 export default function GlobalDataCarePage() {
@@ -77,8 +77,8 @@ export default function GlobalDataCarePage() {
       {/* Slide 13b - Valuation 2026 */}
       <ValuationSection />
       
-      {/* Slide 14 - Investment */}
-      <InvestmentSection />
+      {/* Slide 14 - Urgent Investment Plan */}
+      <UrgentInvestmentSection />
       
       {/* Footer Logos */}
       <FooterLogos />
