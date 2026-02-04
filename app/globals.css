@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Horizonte Europa Color Palette */
+    --background: 210 40% 96%;
+    --foreground: 210 50% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 50% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 50% 15%;
+    --primary: 207 90% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 94%;
+    --muted-foreground: 210 30% 40%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 85%;
+    --input: 210 30% 85%;
+    --ring: 207 90% 30%;
+    --chart-1: 207 90% 30%;
+    --chart-2: 199 89% 48%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 160 84% 39%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.75rem;
+    
+    /* Custom Europa colors */
+    --europa-dark: 210 50% 15%;
+    --europa-navy: 207 90% 20%;
+    --europa-blue: 207 90% 30%;
+    --europa-cyan: 199 89% 48%;
+    --europa-light: 210 40% 96%;
+    --europa-gold: 38 92% 50%;
+    --europa-teal: 172 66% 50%;
+    --europa-green: 160 84% 39%;
+    --europa-orange: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--europa-light));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--europa-cyan));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--europa-blue));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
