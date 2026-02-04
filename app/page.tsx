@@ -5,6 +5,13 @@ import { CredibilitySection } from "@/components/sections/credibility-section"
 import { HookSection } from "@/components/sections/hook-section"
 import { TechnologySection } from "@/components/sections/technology-section"
 import { RegulatorySection } from "@/components/sections/regulatory-section"
+import { DeadlineSection } from "@/components/sections/deadline-section"
+import { RequirementsSection } from "@/components/sections/requirements-section"
+import { ActiveVerticalsSection } from "@/components/sections/active-verticals-section"
+import { PricingSection } from "@/components/sections/pricing-section"
+import { SpinoffSection } from "@/components/sections/spinoff-section"
+import { RevenueSection } from "@/components/sections/revenue-section"
+import { InvestmentSection } from "@/components/sections/investment-section"
 import { FooterLogos } from "@/components/sections/footer-logos"
 
 export default function GlobalDataCarePage() {
@@ -30,6 +37,27 @@ export default function GlobalDataCarePage() {
       
       {/* Slide 7 - Regulatory */}
       <RegulatorySection />
+      
+      {/* Slide 8 - Deadline & Modalities */}
+      <DeadlineSection />
+      
+      {/* Slide 9 - Requirements */}
+      <RequirementsSection />
+      
+      {/* Slide 10 - Active Verticals */}
+      <ActiveVerticalsSection />
+      
+      {/* Slide 11 - Pricing */}
+      <PricingSection />
+      
+      {/* Slide 12 - Spin-Off */}
+      <SpinoffSection />
+      
+      {/* Slide 13 - Revenue Projection */}
+      <RevenueSection />
+      
+      {/* Slide 14 - Investment */}
+      <InvestmentSection />
       
       {/* Footer Logos */}
       <FooterLogos />
