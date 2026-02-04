@@ -97,16 +97,7 @@ export function VerticalsSection() {
           ))}
         </div>
 
-        {/* Accuro branding */}
-        <div className="mt-12 flex justify-end items-center gap-3">
-          <div className="w-12 h-12 bg-[hsl(25,95%,53%)] rounded-xl flex items-center justify-center">
-            <span className="text-white text-2xl font-bold">a</span>
-          </div>
-          <div>
-            <span className="text-2xl font-light text-[hsl(25,95%,53%)]">accuro</span>
-            <span className="block text-xs text-gray-500 uppercase tracking-wider">Technology</span>
-          </div>
-        </div>
+
       </div>
     </section>
   )
