@@ -19,6 +19,7 @@ import { ValuationSection } from "@/components/sections/valuation-section"
 import { InvestmentSection } from "@/components/sections/investment-section" // Import added for InvestmentSection
 import { UrgentInvestmentSection } from "@/components/sections/urgent-investment-section" // Import added for UrgentInvestmentSection
 import { SpinoffScenarioSections } from "@/components/sections/spinoff-scenario"
+import { InvestorScenarioSections } from "@/components/sections/investor-scenario"
 import { FooterLogos } from "@/components/sections/footer-logos"
 
 export default function GlobalDataCarePage() {
@@ -83,6 +84,9 @@ export default function GlobalDataCarePage() {
       
       {/* ESCENARIO SPIN-OFF - 10 New Slides */}
       <SpinoffScenarioSections />
+      
+      {/* ESCENARIO INVERSOR - 6 New Slides */}
+      <InvestorScenarioSections />
       
       {/* Footer Logos */}
       <FooterLogos />
