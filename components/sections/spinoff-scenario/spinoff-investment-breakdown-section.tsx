@@ -1,12 +1,12 @@
 "use client"
 
-import { Megaphone, Users, Server, CreditCard, AlertTriangle } from "lucide-react"
+import { Megaphone, Users, Server, FileText, Wrench, AlertTriangle } from "lucide-react"
 
 const investmentAreas = [
   {
     icon: Megaphone,
     title: "Marketing y Ventas",
-    subtitle: "Captación Agresiva",
+    subtitle: "Captacion Agresiva",
     amount: "60.000",
     percentage: "19.4%",
     color: "bg-[#FFCC00]",
@@ -14,7 +14,7 @@ const investmentAreas = [
   },
   {
     icon: Users,
-    title: "Equipo Gestor y Técnico",
+    title: "Equipo Gestor y Tecnico",
     subtitle: "Procesamiento de Expedientes",
     amount: "60.000",
     percentage: "19.4%",
@@ -24,16 +24,16 @@ const investmentAreas = [
   {
     icon: Server,
     title: "Equipos e Infraestructura",
-    subtitle: "Escalado Tecnológico",
+    subtitle: "Escalado Tecnologico",
     amount: "30.000",
     percentage: "9.7%",
     color: "bg-[#003399]",
     textColor: "text-white",
   },
   {
-    icon: CreditCard,
-    title: "Tramitación Ayudas Kit Espacio de Datos",
-    subtitle: "Gestión Administrativa",
+    icon: FileText,
+    title: "Tramitacion Ayudas Kit Espacio de Datos",
+    subtitle: "Gestion Administrativa",
     amount: "60.000",
     percentage: "19.4%",
     color: "bg-purple-500",
@@ -41,9 +41,9 @@ const investmentAreas = [
     calculation: "600 EUR x 100 solicitudes",
   },
   {
-    icon: CreditCard,
-    title: "Consultoría Técnica Solicitantes",
-    subtitle: "Soporte Técnico Kit Espacio de Datos",
+    icon: Wrench,
+    title: "Consultoria Tecnica Solicitantes",
+    subtitle: "Soporte Tecnico Kit Espacio de Datos",
     amount: "100.000",
     percentage: "32.3%",
     color: "bg-rose-500",
@@ -55,18 +55,18 @@ const investmentAreas = [
 
 export function SpinoffInvestmentBreakdownSection() {
   return (
-    <section className="py-20 px-4 bg-[#0a1628]">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
+          <div className="inline-block bg-[#003399] text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
             ESCENARIO SPIN-OFF - SLIDE 7/10
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Desglose de Inversión Requerida
+          <h2 className="text-4xl md:text-5xl font-bold text-[#003399] mb-4">
+            Desglose de Inversion Requerida
           </h2>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-            Distribución estratégica de los fondos para el despliegue del Escenario Spin-off
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Distribucion estrategica de los fondos para el despliegue del Escenario Spin-off
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export function SpinoffInvestmentBreakdownSection() {
               <div className="flex items-center gap-2 mb-2">
                 <AlertTriangle className="w-6 h-6 text-[#003399]" />
                 <span className="text-[#003399]/70 text-sm font-bold uppercase tracking-wider">
-                  Total Inversión Escenario Spin-off
+                  Total Inversion Escenario Spin-off
                 </span>
               </div>
               <h3 className="text-5xl md:text-6xl font-bold text-[#003399]">310.000 EUR</h3>
@@ -94,7 +94,7 @@ export function SpinoffInvestmentBreakdownSection() {
           {investmentAreas.map((area) => (
             <div
               key={area.title}
-              className={`bg-[#0d2847] border ${area.highlight ? "border-emerald-500" : "border-white/10"} rounded-xl overflow-hidden`}
+              className={`bg-white border ${area.highlight ? "border-rose-300" : "border-gray-200"} rounded-xl overflow-hidden shadow-sm`}
             >
               {/* Header */}
               <div className={`${area.color} p-4`}>
@@ -113,16 +113,16 @@ export function SpinoffInvestmentBreakdownSection() {
               {/* Amount */}
               <div className="p-5">
                 <div className="flex items-end justify-between">
-                  <span className="text-3xl font-bold text-[#FFCC00]">EUR {area.amount}</span>
+                  <span className="text-3xl font-bold text-[#003399]">EUR {area.amount}</span>
                   {area.highlight && (
-                    <span className="text-emerald-400 text-sm bg-emerald-500/20 px-3 py-1 rounded-full">
+                    <span className="text-rose-500 text-sm bg-rose-50 px-3 py-1 rounded-full font-medium">
                       Mayor partida
                     </span>
                   )}
                 </div>
                 {area.calculation && (
                   <p className="text-gray-500 text-sm mt-2">
-                    Cálculo: {area.calculation}
+                    Calculo: {area.calculation}
                   </p>
                 )}
               </div>
@@ -131,15 +131,15 @@ export function SpinoffInvestmentBreakdownSection() {
         </div>
 
         {/* Comparison note */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+        <div className="bg-[#003399]/5 border border-[#003399]/20 rounded-xl p-6">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center flex-shrink-0">
-              <AlertTriangle className="w-5 h-5 text-amber-400" />
+            <div className="w-10 h-10 rounded-lg bg-[#FFCC00]/20 flex items-center justify-center flex-shrink-0">
+              <AlertTriangle className="w-5 h-5 text-[#FFCC00]" />
             </div>
             <div>
-              <h4 className="text-white font-bold mb-2">Modelo de Servicio "Llave en Mano"</h4>
-              <p className="text-gray-400 text-sm">
-                La Spin-off invierte <span className="text-amber-400 font-semibold">1.600 EUR por solicitante</span> (600 EUR de tramitacion + 1.000 EUR de consultoria tecnica) 
+              <h4 className="text-[#003399] font-bold mb-2">Modelo de Servicio "Llave en Mano"</h4>
+              <p className="text-gray-600 text-sm">
+                La Spin-off invierte <span className="text-[#003399] font-semibold">1.600 EUR por solicitante</span> (600 EUR de tramitacion + 1.000 EUR de consultoria tecnica) 
                 para eliminar cualquier friccion tecnica o administrativa. Las cuotas mensuales (290 EUR/mes) son ingresos diferidos que se cobraran 
                 una vez el solicitante reciba la subvencion (aproximadamente 6 meses).
               </p>

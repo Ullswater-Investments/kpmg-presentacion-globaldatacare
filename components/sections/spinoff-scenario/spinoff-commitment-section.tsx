@@ -4,17 +4,17 @@ import { FileCheck, Calendar, RefreshCw, Shield } from "lucide-react"
 
 export function SpinoffCommitmentSection() {
   return (
-    <section className="py-20 px-4 bg-[#002266]">
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
+          <div className="inline-block bg-[#003399] text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
             ESCENARIO SPIN-OFF - SLIDE 6/10
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#003399] mb-4">
             Condiciones de Permanencia
           </h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Compromiso contractual que garantiza ingresos recurrentes
           </p>
         </div>
@@ -22,66 +22,66 @@ export function SpinoffCommitmentSection() {
         {/* Main conditions */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Conditional Payment */}
-          <div className="bg-[#001a4d] border border-white/10 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 rounded-xl bg-emerald-500 flex items-center justify-center">
                 <FileCheck className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-white font-bold text-xl">Pago Condicionado</h3>
-                <p className="text-emerald-400 text-sm">Sin riesgo para el usuario</p>
+                <h3 className="text-[#003399] font-bold text-xl">Pago Condicionado</h3>
+                <p className="text-emerald-500 text-sm font-medium">Sin riesgo para el usuario</p>
               </div>
             </div>
 
-            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-5 mb-6">
-              <p className="text-white text-lg font-semibold mb-2">
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-6">
+              <p className="text-[#003399] text-lg font-semibold mb-2">
                 Pago solo si hay ayuda
               </p>
-              <p className="text-gray-400 text-sm">
-                Los solicitantes <span className="text-emerald-400 font-semibold">solo pagan las seis cuotas iniciales si reciben efectivamente la ayuda</span> del Kit Espacio de Datos.
+              <p className="text-gray-600 text-sm">
+                Los solicitantes <span className="text-emerald-500 font-semibold">solo pagan las seis cuotas iniciales si reciben efectivamente la ayuda</span> del Kit Espacio de Datos.
               </p>
             </div>
 
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-300">
-                <Shield className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-gray-700">
+                <Shield className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">Si la ayuda no es concedida, el usuario no debe nada</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300">
-                <Shield className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-gray-700">
+                <Shield className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">Riesgo 100% asumido por la Spin-off</span>
               </li>
             </ul>
           </div>
 
           {/* Automatic Renewal */}
-          <div className="bg-[#001a4d] border border-white/10 rounded-2xl p-8">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-xl bg-cyan-500 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-xl bg-[#00A3E0] flex items-center justify-center">
                 <RefreshCw className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-white font-bold text-xl">Fidelización Garantizada</h3>
-                <p className="text-cyan-400 text-sm">Renovación obligatoria</p>
+                <h3 className="text-[#003399] font-bold text-xl">Fidelizacion Garantizada</h3>
+                <p className="text-[#00A3E0] text-sm font-medium">Renovacion obligatoria</p>
               </div>
             </div>
 
-            <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-5 mb-6">
-              <p className="text-white text-lg font-semibold mb-2">
+            <div className="bg-[#00A3E0]/10 border border-[#00A3E0]/30 rounded-xl p-5 mb-6">
+              <p className="text-[#003399] text-lg font-semibold mb-2">
                 12 meses adicionales
               </p>
-              <p className="text-gray-400 text-sm">
-                Obligación contractual de <span className="text-cyan-400 font-semibold">renovar por 12 meses adicionales</span> tras el periodo subvencionado de 6 meses.
+              <p className="text-gray-600 text-sm">
+                Obligacion contractual de <span className="text-[#00A3E0] font-semibold">renovar por 12 meses adicionales</span> tras el periodo subvencionado de 6 meses.
               </p>
             </div>
 
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-300">
-                <Calendar className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-gray-700">
+                <Calendar className="w-5 h-5 text-[#00A3E0] flex-shrink-0 mt-0.5" />
                 <span className="text-sm">Ciclo total de permanencia: 18 meses</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300">
-                <Calendar className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 text-gray-700">
+                <Calendar className="w-5 h-5 text-[#00A3E0] flex-shrink-0 mt-0.5" />
                 <span className="text-sm">Ingresos recurrentes garantizados por contrato</span>
               </li>
             </ul>
@@ -108,7 +108,7 @@ export function SpinoffCommitmentSection() {
                 <span className="text-white font-bold text-xl">12</span>
               </div>
               <p className="text-[#003399] font-bold">Meses Adicionales</p>
-              <p className="text-[#003399]/70 text-sm">Renovación obligatoria</p>
+              <p className="text-[#003399]/70 text-sm">Renovacion obligatoria</p>
               <p className="text-[#003399]/60 text-xs mt-1">290 EUR/mes (pagado)</p>
             </div>
 

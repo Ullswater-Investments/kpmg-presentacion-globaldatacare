@@ -4,17 +4,17 @@ import { Target, Calendar, Award, Building2 } from "lucide-react"
 
 export function SpinoffCriticalMilestoneSection() {
   return (
-    <section className="py-20 px-4 bg-[#003399]">
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
+          <div className="inline-block bg-[#003399] text-white text-xs font-bold px-4 py-2 rounded-full mb-4">
             ESCENARIO SPIN-OFF - SLIDE 4/10
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            El Hito Crítico: 100 Adhesiones
+          <h2 className="text-4xl md:text-5xl font-bold text-[#003399] mb-4">
+            El Hito Critico: 100 Adhesiones
           </h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Objetivo fundamental para acceder a las ayudas del Kit Espacio de Datos
           </p>
         </div>
@@ -31,13 +31,13 @@ export function SpinoffCriticalMilestoneSection() {
                 100 Empresas
               </h3>
               <p className="text-[#003399]/80 text-lg">
-                Adheridas antes del cierre de la convocatoria pública
+                Adheridas antes del cierre de la convocatoria publica
               </p>
             </div>
-            <div className="bg-white/30 rounded-xl p-6">
+            <div className="bg-white/50 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <Calendar className="w-6 h-6 text-[#003399]" />
-                <span className="text-[#003399] font-bold">FECHA LÍMITE</span>
+                <span className="text-[#003399] font-bold">FECHA LIMITE</span>
               </div>
               <p className="text-4xl font-bold text-[#003399]">31 Marzo</p>
               <p className="text-[#003399]/70">Cierre convocatoria Kit Espacio de Datos</p>
@@ -47,47 +47,47 @@ export function SpinoffCriticalMilestoneSection() {
 
         {/* Aid amounts */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-[#002266] border border-white/10 rounded-xl p-6">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-lg bg-emerald-500 flex items-center justify-center">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-bold">Proyectos en Desarrollo</h4>
-                <p className="text-emerald-400 text-sm">Madurez inicial</p>
+                <h4 className="text-[#003399] font-bold">Proyectos en Desarrollo</h4>
+                <p className="text-emerald-500 text-sm font-medium">Madurez inicial</p>
               </div>
             </div>
-            <p className="text-4xl font-bold text-emerald-400 mb-2">15.000 EUR</p>
-            <p className="text-gray-400 text-sm">
-              Ayuda para proyectos en fase inicial de madurez tecnológica
+            <p className="text-4xl font-bold text-emerald-500 mb-2">15.000 EUR</p>
+            <p className="text-gray-600 text-sm">
+              Ayuda para proyectos en fase inicial de madurez tecnologica
             </p>
           </div>
 
-          <div className="bg-[#002266] border border-white/10 rounded-xl p-6">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-lg bg-cyan-500 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-[#00A3E0] flex items-center justify-center">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-bold">Proyectos Maduros</h4>
-                <p className="text-cyan-400 text-sm">Alto nivel de desarrollo</p>
+                <h4 className="text-[#003399] font-bold">Proyectos Maduros</h4>
+                <p className="text-[#00A3E0] text-sm font-medium">Alto nivel de desarrollo</p>
               </div>
             </div>
-            <p className="text-4xl font-bold text-cyan-400 mb-2">30.000 EUR</p>
-            <p className="text-gray-400 text-sm">
+            <p className="text-4xl font-bold text-[#00A3E0] mb-2">30.000 EUR</p>
+            <p className="text-gray-600 text-sm">
               Ayuda para proyectos con alto nivel de madurez y trayectoria demostrada
             </p>
           </div>
         </div>
 
         {/* Info box */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex items-start gap-4">
-          <Building2 className="w-8 h-8 text-[#FFCC00] flex-shrink-0" />
+        <div className="bg-[#003399]/5 border border-[#003399]/20 rounded-xl p-6 flex items-start gap-4">
+          <Building2 className="w-8 h-8 text-[#003399] flex-shrink-0" />
           <div>
-            <h4 className="text-white font-bold mb-2">Tramitación Individual</h4>
-            <p className="text-white/70">
-              La cantidad solicitada dependerá del estado de madurez del proyecto individual de cada uno de los solicitantes.
-              Global Data Care gestiona la tramitación de todas las solicitudes ante Red.es.
+            <h4 className="text-[#003399] font-bold mb-2">Tramitacion Individual</h4>
+            <p className="text-gray-600">
+              La cantidad solicitada dependera del estado de madurez del proyecto individual de cada uno de los solicitantes.
+              Global Data Care gestiona la tramitacion de todas las solicitudes ante Red.es.
             </p>
           </div>
         </div>
