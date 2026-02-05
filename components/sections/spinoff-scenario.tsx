@@ -2,6 +2,11 @@
 
 import { Building2, ArrowRight, Euro, Target, Clock, Shield, PiggyBank, TrendingUp, Users, Award, CheckCircle2, Banknote, Calendar, FileCheck, Repeat, BarChart3 } from "lucide-react"
 
+// Consistent number formatting to avoid hydration mismatch
+function formatNumber(num: number): string {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+}
+
 // Slide 1: Concepto de la Nueva Entidad (Spin-off)
 function SpinoffConceptSlide() {
   return (
@@ -380,7 +385,7 @@ function InvestmentBreakdownSlide() {
                       {item.detail && <p className="text-gray-500 text-sm">{item.detail}</p>}
                     </div>
                   </div>
-                  <p className="text-white font-bold text-xl">{item.amount.toLocaleString()} EUR</p>
+                  <p className="text-white font-bold text-xl">{formatNumber(item.amount)} EUR</p>
                 </div>
               </div>
             ))}
@@ -389,7 +394,7 @@ function InvestmentBreakdownSlide() {
           <div className="bg-gradient-to-br from-[#0d2847] to-[#122a4a] rounded-3xl p-10 flex flex-col justify-center items-center border-2 border-amber-500/30">
             <PiggyBank className="w-16 h-16 text-amber-500 mb-4" />
             <p className="text-gray-400 text-sm mb-2">TOTAL INVERSIÓN URGENTE</p>
-            <p className="text-6xl font-bold text-amber-400">{total.toLocaleString()}</p>
+            <p className="text-6xl font-bold text-amber-400">{formatNumber(total)}</p>
             <p className="text-amber-400 text-2xl font-semibold">EUR</p>
           </div>
         </div>
