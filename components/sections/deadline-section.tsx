@@ -87,7 +87,7 @@ export function DeadlineSection() {
                 </div>
               </div>
               <p className="text-gray-400 text-sm">empresas</p>
-              <p className="text-gray-400 text-sm mt-2">→ Con Data Space Kit homologado SEDIA</p>
+              <p className="text-gray-400 text-sm mt-2">→ Con Kit Espacio de Datos homologado SEDIA</p>
             </div>
 
             {/* Fase 2 */}
