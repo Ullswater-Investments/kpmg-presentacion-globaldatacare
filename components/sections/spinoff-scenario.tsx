@@ -416,7 +416,7 @@ function CashFlowSlide() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
           <div className="bg-white border-2 border-[#00A3E0]/30 rounded-2xl p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 rounded-xl bg-[#00A3E0] flex items-center justify-center">
@@ -452,6 +452,33 @@ function CashFlowSlide() {
               <p className="text-5xl font-bold text-emerald-500">29.000</p>
               <p className="text-emerald-500 font-semibold">EUR / mes</p>
               <p className="text-gray-500 text-sm mt-2">(100 empresas x 290 EUR)</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Cash flow timeline */}
+        <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+          <h4 className="text-[#003399] font-bold text-xl mb-6 text-center">Proyeccion de Flujo de Caja (18 meses)</h4>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-center p-4 bg-red-50 rounded-xl">
+              <p className="text-gray-500 text-xs mb-1">Mes 0</p>
+              <p className="text-[#003399] font-semibold text-sm mb-1">Inversion Inicial</p>
+              <p className="text-red-500 font-bold text-lg">-310.000 EUR</p>
+            </div>
+            <div className="text-center p-4 bg-[#FFCC00]/10 rounded-xl">
+              <p className="text-gray-500 text-xs mb-1">Mes 6</p>
+              <p className="text-[#003399] font-semibold text-sm mb-1">Cobro Diferido</p>
+              <p className="text-emerald-500 font-bold text-lg">+174.000 EUR</p>
+            </div>
+            <div className="text-center p-4 bg-[#00A3E0]/10 rounded-xl">
+              <p className="text-gray-500 text-xs mb-1">Mes 12</p>
+              <p className="text-[#003399] font-semibold text-sm mb-1">Ingresos MRR</p>
+              <p className="text-[#00A3E0] font-bold text-lg">+174.000 EUR</p>
+            </div>
+            <div className="text-center p-4 bg-emerald-50 rounded-xl">
+              <p className="text-gray-500 text-xs mb-1">Mes 18</p>
+              <p className="text-[#003399] font-semibold text-sm mb-1">Beneficio Neto</p>
+              <p className="text-emerald-500 font-bold text-lg">+212.000 EUR</p>
             </div>
           </div>
         </div>
