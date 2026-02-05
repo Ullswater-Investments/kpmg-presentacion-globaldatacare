@@ -356,10 +356,11 @@ function InvestmentBreakdownSlide() {
     { label: "Marketing y Ventas", amount: 60000, color: "bg-cyan-500" },
     { label: "Equipo Gestor y Técnico", amount: 60000, color: "bg-emerald-500" },
     { label: "Infraestructura y Equipos", amount: 30000, color: "bg-amber-500" },
-    { label: "Financiación de Cuotas Iniciales", amount: 174000, color: "bg-red-500", detail: "(100 x 290EUR x 6m)" },
+    { label: "Tramitación Ayudas Kit Espacio de Datos", amount: 60000, color: "bg-purple-500", detail: "(600 EUR x 100 solicitudes)" },
+    { label: "Consultoría Técnica Solicitantes", amount: 100000, color: "bg-rose-500", detail: "(1.000 EUR x 100 solicitudes)" },
   ]
 
-  const total = 324000
+  const total = 310000
 
   return (
     <section className="py-16 bg-[#0a1628]">

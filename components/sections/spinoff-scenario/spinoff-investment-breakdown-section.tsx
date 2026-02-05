@@ -8,7 +8,7 @@ const investmentAreas = [
     title: "Marketing y Ventas",
     subtitle: "Captación Agresiva",
     amount: "60.000",
-    percentage: "18.5%",
+    percentage: "19.4%",
     color: "bg-[#FFCC00]",
     textColor: "text-[#003399]",
   },
@@ -17,7 +17,7 @@ const investmentAreas = [
     title: "Equipo Gestor y Técnico",
     subtitle: "Procesamiento de Expedientes",
     amount: "60.000",
-    percentage: "18.5%",
+    percentage: "19.4%",
     color: "bg-[#00A3E0]",
     textColor: "text-white",
   },
@@ -26,20 +26,30 @@ const investmentAreas = [
     title: "Equipos e Infraestructura",
     subtitle: "Escalado Tecnológico",
     amount: "30.000",
-    percentage: "9.3%",
+    percentage: "9.7%",
     color: "bg-[#003399]",
     textColor: "text-white",
   },
   {
     icon: CreditCard,
-    title: "Financiación de Cuotas",
-    subtitle: "Coste de Capital",
-    amount: "174.000",
-    percentage: "53.7%",
-    color: "bg-emerald-500",
+    title: "Tramitación Ayudas Kit Espacio de Datos",
+    subtitle: "Gestión Administrativa",
+    amount: "60.000",
+    percentage: "19.4%",
+    color: "bg-purple-500",
+    textColor: "text-white",
+    calculation: "600 EUR x 100 solicitudes",
+  },
+  {
+    icon: CreditCard,
+    title: "Consultoría Técnica Solicitantes",
+    subtitle: "Soporte Técnico Kit Espacio de Datos",
+    amount: "100.000",
+    percentage: "32.3%",
+    color: "bg-rose-500",
     textColor: "text-white",
     highlight: true,
-    calculation: "100 empresas x 290 EUR x 6 meses",
+    calculation: "1.000 EUR x 100 solicitudes",
   },
 ]
 
@@ -70,11 +80,11 @@ export function SpinoffInvestmentBreakdownSection() {
                   Total Inversión Escenario Spin-off
                 </span>
               </div>
-              <h3 className="text-5xl md:text-6xl font-bold text-[#003399]">324.000 EUR</h3>
+              <h3 className="text-5xl md:text-6xl font-bold text-[#003399]">310.000 EUR</h3>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-[#003399]/70 text-sm">Incluye financiación de</p>
-              <p className="text-[#003399] font-bold text-xl">100 empresas x 6 meses</p>
+              <p className="text-[#003399]/70 text-sm">Incluye soporte para</p>
+              <p className="text-[#003399] font-bold text-xl">100 solicitudes Kit Espacio de Datos</p>
             </div>
           </div>
         </div>
@@ -127,11 +137,11 @@ export function SpinoffInvestmentBreakdownSection() {
               <AlertTriangle className="w-5 h-5 text-amber-400" />
             </div>
             <div>
-              <h4 className="text-white font-bold mb-2">Diferencia con Escenario Anterior</h4>
+              <h4 className="text-white font-bold mb-2">Modelo de Servicio "Llave en Mano"</h4>
               <p className="text-gray-400 text-sm">
-                El Escenario Spin-off requiere <span className="text-amber-400 font-semibold">174.000 EUR adicionales</span> para 
-                la financiación de cuotas (vs. 150.000 EUR del escenario base). Esta inversión adicional elimina la barrera 
-                financiera de entrada y acelera drásticamente la captación de los 100 primeros clientes.
+                La Spin-off invierte <span className="text-amber-400 font-semibold">1.600 EUR por solicitante</span> (600 EUR de tramitacion + 1.000 EUR de consultoria tecnica) 
+                para eliminar cualquier friccion tecnica o administrativa. Las cuotas mensuales (290 EUR/mes) son ingresos diferidos que se cobraran 
+                una vez el solicitante reciba la subvencion (aproximadamente 6 meses).
               </p>
             </div>
           </div>
