@@ -18,6 +18,7 @@ import { GrowthStrategySection } from "@/components/sections/growth-strategy-sec
 import { ValuationSection } from "@/components/sections/valuation-section"
 import { InvestmentSection } from "@/components/sections/investment-section" // Import added for InvestmentSection
 import { UrgentInvestmentSection } from "@/components/sections/urgent-investment-section" // Import added for UrgentInvestmentSection
+import { SpinoffScenarioSections } from "@/components/sections/spinoff-scenario"
 import { FooterLogos } from "@/components/sections/footer-logos"
 
 export default function GlobalDataCarePage() {
@@ -79,6 +80,9 @@ export default function GlobalDataCarePage() {
       
       {/* Slide 14 - Urgent Investment Plan */}
       <UrgentInvestmentSection />
+      
+      {/* ESCENARIO SPIN-OFF - 10 New Slides */}
+      <SpinoffScenarioSections />
       
       {/* Footer Logos */}
       <FooterLogos />
